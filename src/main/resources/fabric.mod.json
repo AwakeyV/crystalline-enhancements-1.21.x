@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "crystalenhancements",
+	"version": "${version}",
+	"name": "Crystalline Enhancements",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crystalenhancements/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.awakey.crystalineenchancements.CrystallineEnhancements"
+		],
+		"fabric-datagen": [
+			"net.awakey.crystalineenchancements.CrystallineEnhancementsDataGenerator"
+		],
+		"client": [
+			"net.awakey.crystalineenchancements.CrystalineEnhancementsClient"
+		]
+	},
+	"mixins": [
+		"crystalenhancements.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
